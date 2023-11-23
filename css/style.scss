@@ -1,0 +1,11 @@
+@import "_header";
+@import "_navbar";
+@import "blogs";
+@import "container";
+@import "footer";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

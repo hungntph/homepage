@@ -1,0 +1,141 @@
+@import 'media-queries.scss';
+
+%align-center {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  background: rgb(212, 212, 221);
+  opacity: 0.8;
+  height: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  z-index: 10;
+  position: relative;
+  @include mobie {
+    height: 69px;
+  }
+
+  &-logo {
+    img {
+      width: 30%;
+      height: 30%;
+    }
+    a {
+      font-weight: bold;
+    }
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0;
+    @extend %align-center;
+
+    @include mobie {
+      position: absolute;
+      float: left;
+      align-items: center;
+      font-size: 1.5rem;
+      justify-content: center;
+      width: 100%;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  &-bars {
+    opacity: 0;
+
+    @include mobie {
+      color: gray;
+      opacity: 1;
+      position: absolute;
+      margin: 5%;
+      font-size: 2rem;
+    }
+  }
+
+  &-input {
+    display: flex;
+    width: 30%;
+    height: 46px;
+    border-radius: 5px;
+    position: relative;
+
+    input {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 5px;
+      font-size: 20px;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 100%;
+      border-radius: 25px;
+      cursor: pointer;
+      border: none;
+    }
+
+    @include mobie {
+      display: none;
+    }
+  }
+
+  &-search {
+    opacity: 0;
+
+    @include mobie {
+      opacity: 1;
+      position: absolute;
+      top: 25px;
+      right: 10%;
+      border-radius: 25px;
+      border: none;
+    }
+  }
+
+  &-menu {
+    @extend %align-center;
+    list-style: none;
+    text-align: center;
+
+    @include mobie {
+      display: none;
+    }
+
+    &-items {
+      @extend %align-center;
+      color: black;
+      justify-content: center;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    #button {
+      padding: 6px 18px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      background: rgb(139, 4, 4);
+      color: antiquewhite;
+
+      &:hover {
+        background: gray;
+      }
+    }
+  }
+}

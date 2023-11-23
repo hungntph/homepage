@@ -4,8 +4,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <!-- style.css file link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <div class="container">
+        <!-- header start -->
+        <header>
+            <nav class="navbar">
+                <div class="navbar-logo">
+                    <img src="images/logo-regit.png" alt="logo">
+                    <a>RT-Blogs</a>
+                </div>
+                <div class="navbar-input">
+                    <input type="text" placeholder="Search blog">
+                    <button>
+                        <img src="images/Search.png" alt="">
+                    </button>
+                </div>
+                <div class="navbar-search">
+                    <img src="images/Search.png" alt="">
+                </div>
+                <div class="navbar-bars">
+                    <img src="images/navbar-bars.png" alt="">
+                </div>
+                <div class="navbar-menu">
+                    <a href="" class="navbar-menu-items" id="button">TOP</a>
+                    <a href="" class="navbar-menu-items">Create Blog</a>
+                    <a href="" class="navbar-menu-items">my name</a>
+                    <a href="" class="navbar-menu-items">
+                        <img src="images/logo-user.png" alt="">
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <!-- header end -->
     
+        <!-- Blog list start -->
+        <div class="blogs">
+            <div class="blogs-title">
+                <a href="" class="blogs-title-name">List Blog</a>
+                <select class="blogs-title-category">
+                    <option>Category</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sx-12 col-sm-6">
+                    <div class="card">
+                        <img src="images/item-1.png" class="card-img-top img-size " alt="...">
+                        <div class="card-body">
+                            <div class="author-time" style="display: flex;">
+                                <h6 class="author" style="margin: 10px;"><i class='bx bx-user'></i>Jimmy nguyen</h6>
+                                <h6 class="time" style="margin: 10px;"><i class="bi bi-clock"></i>3 mins ago</h6>
+                            </div>
+                            <h6 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="read-more">
+                                <a href="#" style="text-decoration: none; color: red;">Read more
+                                    <img src="images/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sx-12 col-sm-6">
+                    <div class="card">
+                        <img src="images/Rectangle 82.png" class="card-img-top img-size " alt="...">
+                        <div class="card-body">
+                            <div class="author-time" style="display: flex;">
+                                <h6 class="author" style="margin: 10px;"><i class='bx bx-user'></i>Jimmy nguyen</h6>
+                                <h6 class="time" style="margin: 10px;"><i class="bi bi-clock"></i>3 mins ago</h6>
+                            </div>
+                            <h6 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="read-more">
+                                <a href="#" style="text-decoration: none;color: red">Read more
+                                    <img src="images/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sx-12 col-sm-6">
+                    <div class="card">
+                        <img src="images/Rectangle 84.png" class="card-img-top img-size " alt="...">
+                        <div class="card-body">
+                            <div class="author-time" style="display: flex;">
+                                <h6 class="author" style="margin: 10px;"><i class='bx bx-user'></i>Jimmy nguyen</h6>
+                                <h6 class="time" style="margin: 10px;"><i class="bi bi-clock"></i>3 mins ago</h6>
+                            </div>
+                            <h6 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="read-more">
+                                <a href="#" style="text-decoration: none;color: red">Read more
+                                    <img src="images/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sx-12 col-sm-6">
+                    <div class="card">
+                        <img src="images/Rectangle 88.png" class="card-img-top img-size " alt="...">
+                        <div class="card-body">
+                            <div class="author-time" style="display: flex;">
+                                <h6 class="author" style="margin: 10px;"><i class='bx bx-user'></i>Jimmy nguyen</h6>
+                                <h6 class="time" style="margin: 10px;"><i class="bi bi-clock"></i>3 mins ago</h6>
+                            </div>
+                            <h6 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="read-more">
+                                <a href="#" style="text-decoration: none;color: red">Read more
+                                    <img src="images/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sx-12 col-sm-6">
+                    <div class="card">
+                        <img src="images/Rectangle 89.png" class="card-img-top img-size " alt="...">
+                        <div class="card-body">
+                            <div class="author-time" style="display: flex;">
+                                <h6 class="author" style="margin: 10px;"><i class='bx bx-user'></i>Jimmy nguyen</h6>
+                                <h6 class="time" style="margin: 10px;"><i class="bi bi-clock"></i>3 mins ago</h6>
+                            </div>
+                            <h6 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="read-more">
+                                <a href="#" style="text-decoration: none;color: red">Read more
+                                    <img src="images/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sx-12 col-sm-6">
+                    <div class="card">
+                        <img src="images/Rectangle 90.png" class="card-img-top img-size " alt="...">
+                        <div class="card-body">
+                            <div class="author-time" style="display: flex;">
+                                <h6 class="author" style="margin: 10px;"><i class='bx bx-user'></i>Jimmy nguyen</h6>
+                                <h6 class="time" style="margin: 10px;"><i class="bi bi-clock"></i>3 mins ago</h6>
+                            </div>
+                            <h6 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="read-more">
+                                <a href="#" style="text-decoration: none;color: red">Read more
+                                    <img src="images/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sx-12 col-sm-6">
+                    <div class="card">
+                        <img src="images/Rectangle 94.png" class="card-img-top img-size " alt="...">
+                        <div class="card-body">
+                            <div class="author-time" style="display: flex;">
+                                <h6 class="author" style="margin: 10px;"><i class='bx bx-user'></i>Jimmy nguyen</h6>
+                                <h6 class="time" style="margin: 10px;"><i class="bi bi-clock"></i>3 mins ago</h6>
+                            </div>
+                            <h6 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="read-more">
+                                <a href="#" style="text-decoration: none;color: red">Read more
+                                    <img src="images/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sx-12 col-sm-6">
+                    <div class="card">
+                        <img src="images/Rectangle 95.png" class="card-img-top img-size " alt="...">
+                        <div class="card-body">
+                            <div class="author-time" style="display: flex;">
+                                <h6 class="author" style="margin: 10px;"><i class='bx bx-user'></i>Jimmy nguyen</h6>
+                                <h6 class="time" style="margin: 10px;"><i class="bi bi-clock"></i>3 mins ago</h6>
+                            </div>
+                            <h6 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="read-more">
+                                <a href="#" style="text-decoration: none;color: red">Read more
+                                    <img src="images/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sx-12 col-sm-6">
+                    <div class="card">
+                        <img src="images/Rectangle 96.png" class="card-img-top img-size " alt="...">
+                        <div class="card-body">
+                            <div class="author-time" style="display: flex;">
+                                <h6 class="author" style="margin: 10px;"><i class='bx bx-user'></i>Jimmy nguyen</h6>
+                                <h6 class="time" style="margin: 10px;"><i class="bi bi-clock"></i>3 mins ago</h6>
+                            </div>
+                            <h6 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="read-more">
+                                <a href="#" style="text-decoration: none;color: red">Read more
+                                    <img src="images/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs-pages">
+                <div class="blogs-pages-prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <div class="blogs-pages-prev">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        <!-- Blog list end -->
+
+        <!-- Footer start -->
+        <footer>
+            <p>Copyright 2022. Made by Regit JSC</p>
+        </footer>
+        <!-- Footer end -->
+    </div>
 </body>
 </html>
