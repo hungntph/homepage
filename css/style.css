@@ -4,7 +4,7 @@ header {
   height: 519.42px;
 }
 
-.blogs .card-body .author-time, .blogs-pages a, .blogs-pages-prev i, .blogs-pages, .blogs-list-item-icon, .blogs-title, .navbar-menu-items, .navbar-menu, .navbar-input, .navbar-logo, .navbar {
+.blogs .card-body .author-time, .blogs-pages a, .blogs-pages-prev i, .blogs-pages, .blogs-title, .navbar-menu-items, .navbar-menu, .navbar-input, .navbar-logo, .navbar {
   display: flex;
   align-items: center;
 }
@@ -171,44 +171,6 @@ header {
   font-size: 15px;
   line-height: 21.72px;
   border: 1px;
-}
-.blogs-list {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-between;
-}
-.blogs-list-item {
-  width: 417px;
-  height: 276px;
-  margin: 10px;
-}
-.blogs-list-item-image img {
-  width: 417px;
-}
-.blogs-list-item-icon img {
-  width: 24px;
-  height: 24px;
-  margin: 15px;
-}
-.blogs-list-item-icon a {
-  text-decoration: none;
-  font-size: 18px;
-  color: gray;
-}
-.blogs-list-item-detail p {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 15px;
-}
-.blogs-list-item-desc p {
-  font-size: 18px;
-  margin: 15px;
-}
-.blogs-list-item-btn button {
-  width: 137px;
-  height: 40px;
-  border-radius: 8px;
-  border: none;
 }
 .blogs-pages {
   width: 100%;
