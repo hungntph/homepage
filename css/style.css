@@ -4,7 +4,7 @@ header {
   height: 519.42px;
 }
 
-.navbar-menu-items, .navbar-menu, .navbar-input, .navbar-logo, .navbar {
+.blogs .card-body .author-time, .blogs-pages a, .blogs-pages-prev i, .blogs-pages, .blogs-list-item-icon, .blogs-title, .navbar-menu-items, .navbar-menu, .navbar-input, .navbar-logo, .navbar {
   display: flex;
   align-items: center;
 }
@@ -129,7 +129,7 @@ header {
   text-decoration: none;
   padding: 10px;
 }
-.navbar-menu #button {
+.navbar-menu button {
   padding: 6px 18px;
   border: none;
   outline: none;
@@ -137,17 +137,8 @@ header {
   background: rgb(139, 4, 4);
   color: rgb(212, 212, 221);
 }
-.navbar-menu #button:hover {
+.navbar-menu button:hover {
   background: gray;
-}
-
-.blogs .card-body .author-time, .blogs-pages a, .blogs-pages-prev i, .blogs-pages, .blogs-list-item-icon, .blogs-title {
-  display: flex;
-  align-items: center;
-}
-
-.blogs-title, .navbar-logo a, .navbar-input input, .navbar-menu {
-  font-family: Noto Sans JP;
 }
 
 .blogs {
@@ -284,6 +275,7 @@ header {
 .blogs .card-body a:hover {
   border: solid 1px rgb(139, 4, 4);
   border-radius: 10px;
+  background: gray;
 }
 .blogs .card-body h7 {
   margin: 10px;
