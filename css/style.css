@@ -37,13 +37,14 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
 @media screen and (max-width: 768px) {
   .navbar {
     height: 69px;
+    background: #FFFFFF;
   }
 }
 .navbar-logo {
   text-decoration: none;
   width: 55%;
   height: 61px;
-  margin-left: 7%;
+  margin-left: 7.5%;
   position: absolute;
 }
 .navbar-logo-input {
@@ -127,7 +128,7 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
     color: gray;
     opacity: 1;
     position: relative;
-    margin-left: 5%;
+    left: 25px;
     font-size: 2rem;
   }
   .navbar-bars img {
@@ -142,7 +143,7 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
     opacity: 1;
     position: absolute;
     top: 25px;
-    right: 10%;
+    right: 25px;
     border-radius: 25px;
     border: none;
   }
@@ -151,7 +152,7 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   }
 }
 .navbar-menu {
-  margin-right: 7%;
+  margin-right: 7.5%;
   text-decoration: none;
 }
 @media screen and (max-width: 768px) {
@@ -203,9 +204,15 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
 }
 .blogs-title {
   position: relative;
-  margin: 0px 7%;
+  margin: 0px 7.5%;
   padding-top: 68px;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .blogs-title {
+    padding-top: 69px;
+    margin: 0px 9%;
+  }
 }
 .blogs-title select {
   border-radius: 4px;
@@ -333,8 +340,13 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   }
 }
 .blogs .row {
-  margin: 0px 6%;
+  margin: 0px 7%;
   margin-top: 34px;
+}
+@media screen and (max-width: 768px) {
+  .blogs .row {
+    margin: 0px 7%;
+  }
 }
 .blogs .card {
   border-radius: 8px;
@@ -343,9 +355,6 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
 }
 .blogs .card-body {
   font-family: SVN-Gilroy;
-}
-.blogs .card-body .read-more {
-  position: absolute;
 }
 .blogs .card-body button {
   color: #C40000;
@@ -387,6 +396,7 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
 }
 .blogs .card-body h7 {
   padding-right: 25px;
+  padding-left: 3px;
   margin-bottom: 15px;
   font-weight: 400;
   font-size: 18px;
