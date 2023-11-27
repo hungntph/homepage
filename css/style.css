@@ -14,9 +14,8 @@ footer, .blogs .card-body .author-time, .blogs-pages a, .blogs-pages-next, .blog
   align-items: center;
 }
 
-footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo a, .navbar-logo-input input {
-  font-family: "Noto Sans JP";
-  font-style: none;
+footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .navbar-logo-input input {
+  font-family: Noto Sans JP;
 }
 
 .navbar-menu a, .navbar-menu-btn button, .navbar-logo-input input {
@@ -85,10 +84,13 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo a, .navba
 .navbar-logo img {
   height: 100%;
 }
-.navbar-logo a {
+.navbar-logo span {
   font-weight: 700;
   font-size: 20px;
   line-height: 28.96px;
+  font-style: normal;
+  color: black;
+  top: 1px;
 }
 @media screen and (max-width: 768px) {
   .navbar-logo {
@@ -261,11 +263,13 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo a, .navba
   color: #C40000;
   padding: 10px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 20px;
 }
 .blogs .card-body .read-more a:hover {
-  border: 1px solid gray;
+  border-radius: 5px;
+  background: #C40000;
+  color: #FFFFFF;
 }
 .blogs .card-body h6 {
   font-weight: 700;
