@@ -12,7 +12,7 @@ header .image-banner {
   }
 }
 
-footer, .blogs .card-body .read-more, .blogs .card-body .author-time, .blogs-pages-item a, .blogs-pages-item-next, .blogs-pages-item-prev i, .blogs-pages-item, .blogs-pages, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-menu, .navbar-logo-input button, .navbar-logo-input, .navbar-logo {
+footer, .blogs .card-body button, .blogs .card-body .author-time, .blogs-pages-item a, .blogs-pages-item-next, .blogs-pages-item-prev i, .blogs-pages-item, .blogs-pages, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-menu, .navbar-logo-input button, .navbar-logo-input svg, .navbar-logo-input, .navbar-logo {
   display: flex;
   align-items: center;
 }
@@ -70,6 +70,13 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
 .navbar-logo-input input:focus {
   outline: none;
 }
+.navbar-logo-input svg {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  border: none;
+  left: 88%;
+}
 .navbar-logo-input button {
   position: absolute;
   top: 14px;
@@ -78,6 +85,9 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   height: 19px;
   border-radius: 25px;
   border: none;
+}
+.navbar-logo-input button image {
+  color: white;
 }
 @media screen and (max-width: 768px) {
   .navbar-logo-input {
@@ -97,7 +107,7 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
 }
 @media screen and (max-width: 768px) {
   .navbar-logo {
-    top: 0;
+    top: 5px;
     left: 0;
     margin-left: 0;
     font-size: 20px;
@@ -116,9 +126,12 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   .navbar-bars {
     color: gray;
     opacity: 1;
-    position: absolute;
-    margin: 5%;
+    position: relative;
+    margin-left: 5%;
     font-size: 2rem;
+  }
+  .navbar-bars img {
+    padding-bottom: 8px;
   }
 }
 .navbar-search {
@@ -132,6 +145,9 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
     right: 10%;
     border-radius: 25px;
     border: none;
+  }
+  .navbar-search img {
+    padding-bottom: 10px;
   }
 }
 .navbar-menu {
@@ -191,9 +207,22 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   padding-top: 68px;
   justify-content: space-between;
 }
+.blogs-title select {
+  border-radius: 4px;
+  border: 1px solid #DEDEDE;
+  outline: none;
+  padding: 7px 60px 11px 15px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../images/select.png");
+  background-repeat: no-repeat;
+  background-position: 113px center;
+}
 .blogs-title-name {
   text-decoration: none;
   height: 68px;
+  padding-top: 10px;
   font-weight: 700;
   font-size: 50px;
   line-height: 72.4px;
@@ -209,16 +238,26 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   justify-content: center;
   width: 144px;
   height: 40px;
+  padding-left: 15px;
   font-weight: 500;
   font-size: 15px;
   line-height: 21.72px;
   border: solid 1px #DEDEDE;
   border-radius: 4px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .blogs-pages {
   height: 40px;
   margin-bottom: 96px;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .blogs-pages {
+    margin-bottom: 53px;
+    margin-top: 17px;
+  }
 }
 .blogs-pages-item {
   justify-content: center;
@@ -271,7 +310,11 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   color: black;
 }
 .blogs-pages-item a:hover {
-  color: #C40000;
+  height: 40px;
+  width: 40px;
+  color: #FFFFFF;
+  border-radius: 50%;
+  background: #C40000;
 }
 @media screen and (max-width: 768px) {
   .blogs-pages-item a {
@@ -292,32 +335,31 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
 .blogs .card-body {
   font-family: SVN-Gilroy;
 }
-.blogs .card-body .read-more {
-  justify-content: center;
-  margin-top: 30px;
+.blogs .card-body button {
+  color: #C40000;
+  font-size: 14px;
   width: 137px;
+  padding-left: 12px;
+  padding-bottom: 4px;
   height: 40px;
+  border: solid 1px #DEDEDE;
+  border-radius: 4px;
 }
-.blogs .card-body .read-more:hover {
+.blogs .card-body button:hover {
   border-radius: 5px;
   background: #C40000;
   color: #FFFFFF;
 }
-.blogs .card-body .read-more:hover a {
+.blogs .card-body button:hover a {
   color: #FFFFFF;
 }
-.blogs .card-body .read-more:hover svg path {
+.blogs .card-body button:hover svg path {
   stroke: #FFFFFF;
 }
-.blogs .card-body .read-more a {
-  font-family: SVN-Gilroy;
-  justify-content: center;
-  text-decoration: none;
-  color: #C40000;
-  padding-right: 15px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+.blogs .card-body button svg {
+  position: absolute;
+  left: 32%;
+  margin-top: 4px;
 }
 .blogs .card-body h6 {
   font-weight: 700;

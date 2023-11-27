@@ -60,6 +60,15 @@
         }
       }
 
+      svg {
+        @extend %align-center;
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        border: none;
+        left: 88%;
+      }
+
       button {
         @extend %align-center;
         position: absolute;
@@ -69,6 +78,9 @@
         height: 19px;
         border-radius: 25px;
         border: none;
+        image {
+          color: white;
+        }
       }
   
       @include mobie {
@@ -92,7 +104,7 @@
 
     @include mobie {
       @extend %align-center;
-      top: 0;
+      top: 5px;
       left: 0;
       margin-left: 0;
       font-size: 20px;
@@ -111,9 +123,13 @@
     @include mobie {
       color: $gray;
       opacity: 1;
-      position: absolute;
-      margin: 5%;
+      position: relative;
+      margin-left: 5%;
       font-size: 2rem;
+
+      img {
+        padding-bottom: 8px;
+      }
     }
   }
 
@@ -127,6 +143,10 @@
       right: 10%;
       border-radius: 25px;
       border: none;
+
+      img {
+        padding-bottom: 10px;
+      }
     }
   }
 
