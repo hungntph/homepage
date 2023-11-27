@@ -133,6 +133,16 @@
           height: 15px;
           width: 15px;
           font-size: 15px;
+
+          a {
+            height: 28px;
+            width: 28px;
+            &:hover {
+              color: $light;
+              border-radius: 50%;
+              background: $read-color;
+            }
+          }
         }
       }
     }
@@ -154,6 +164,10 @@
 
     .author-time {
       @extend %align-center;
+    }
+
+    .read-more {
+      position: absolute
     }
 
     button {
@@ -180,7 +194,6 @@
         }
       }
       svg {
-        position: absolute;
         left: 32%;
         margin-top: 4px;
       }
