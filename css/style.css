@@ -204,7 +204,7 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
 }
 .blogs-title {
   position: relative;
-  margin: 0px 7.5%;
+  margin: 0px 8% 0px 7.5%;
   padding-top: 68px;
   justify-content: space-between;
 }
