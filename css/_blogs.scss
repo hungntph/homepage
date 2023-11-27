@@ -9,9 +9,14 @@
     position: relative;
     @extend %font-text;
     @extend %align-center;
-    margin: 0px 7%;
+    margin: 0px 7.5%;
     padding-top: 68px;
     justify-content: space-between;
+
+    @include mobie {
+      padding-top: 69px;
+      margin: 0px 9%;
+    }
 
     select {
       border-radius: 4px;
@@ -149,8 +154,12 @@
   }
 
   .row {
-    margin: 0px 6%;
+    margin: 0px 7%;
     margin-top: 34px;
+
+    @include mobie {
+      margin: 0px 7%;
+    }
   }
 
   .card {
@@ -164,10 +173,6 @@
 
     .author-time {
       @extend %align-center;
-    }
-
-    .read-more {
-      position: absolute
     }
 
     button {
@@ -215,6 +220,7 @@
     }
     h7 {
       padding-right: 25px;
+      padding-left: 3px;
       margin-bottom: 15px;
       font-weight: 400;
       font-size: 18px;
