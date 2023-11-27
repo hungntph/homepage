@@ -6,8 +6,7 @@
 }
 
 %font-text {
-  font-family: 'Noto Sans JP';
-  font-style: none;
+  font-family: Noto Sans JP;
 }
 
 %font-size {
@@ -81,11 +80,15 @@
     img {
       height: 100%;
     }
-    a {
+
+    span {
       @extend %font-text;
       font-weight: 700;
       font-size: 20px;
       line-height: 28.96px;
+      font-style: normal;
+      color: $dark;
+      top: 1px;
     }
 
     @include mobie {
