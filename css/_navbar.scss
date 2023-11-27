@@ -1,5 +1,4 @@
 @import "_color";
-@import '_media-queries.scss';
 
 %align-center {
   display: flex;
@@ -7,7 +6,8 @@
 }
 
 %font-text {
-  font-family: Noto Sans JP;
+  font-family: 'Noto Sans JP';
+  font-style: none;
 }
 
 %font-size {
@@ -18,11 +18,9 @@
 
 .navbar {
   @extend %align-center;
-  background: $light;
-  opacity: 0.8;
+  background: $nav-color;
   height: 122px;
   justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1200px) / 2);
   z-index: 10;
   position: relative;
   @include mobie {
@@ -30,9 +28,58 @@
   }
 
   &-logo {
+    @extend %align-center;
+    text-decoration: none;
+    width: 55%;
+    height: 61px;
+    margin-left: 7%;
+    position: absolute;
+
+    &-input {
+      @extend %align-center;
+      width: 40%;
+      margin-left: 20px;
+      height: 46px;
+      border-radius: 5px;
+      position: relative;
+
+      input {
+        @extend %font-text;
+        @extend %font-size;
+        padding-left: 10px;
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: $light;
+        list-style: none;
+
+        &::placeholder {
+          color: $placeholder;
+        }
+  
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        @extend %align-center;
+        position: absolute;
+        top: 14px;
+        right: 12px;
+        width: 19px;
+        height: 19px;
+        border-radius: 25px;
+        border: none;
+      }
+  
+      @include mobie {
+        display: none;
+      }
+    }
+    
     img {
-      width: 30%;
-      height: 30%;
+      height: 100%;
     }
     a {
       @extend %font-text;
@@ -40,13 +87,11 @@
       font-size: 20px;
       line-height: 28.96px;
     }
-    @extend %align-center;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin: 0;
 
     @include mobie {
       @extend %align-center;
+      top: 0;
+      left: 0;
       font-size: 20px;
       justify-content: center;
       width: 100%;
@@ -69,43 +114,6 @@
     }
   }
 
-  &-input {
-    @extend %align-center;
-    width: 30%;
-    height: 46px;
-    border-radius: 5px;
-    position: relative;
-
-    input {
-      @extend %font-text;
-      @extend %font-size;
-      padding-left: 20px;
-      width: 100%;
-      height: 100%;
-      border-radius: 5px;
-      border: none;
-
-      &:focus {
-        outline: none;
-      }
-    }
-
-    button {
-      opacity: 0.2;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 50px;
-      height: 100%;
-      border-radius: 25px;
-      border: none;
-    }
-
-    @include mobie {
-      display: none;
-    }
-  }
-
   &-search {
     opacity: 0;
 
@@ -120,35 +128,58 @@
   }
 
   &-menu {
-    @extend %font-text;
     @extend %align-center;
-    @extend %font-size;
-    list-style: none;
-    text-align: center;
+    margin-right: 7%;
+    text-decoration: none;
 
     @include mobie {
       display: none;
     }
 
-    &-items {
-      @extend %align-center;
-      color: $dark;
-      justify-content: center;
-      text-decoration: none;
-      padding: 10px;
+    &-avt {
+      margin-left: 10px;
     }
 
-    button {
-      padding: 6px 18px;
-      border: none;
-      outline: none;
-      border-radius: 5px;
-      background: $red;
-      color: $light;
+    &-name {
+      margin-left: 70px;
+    }
 
-      &:hover {
-        background: $gray;
+    &-create {
+      margin-left: 20px;
+    }
+
+    &-btn {
+      @extend %font-text;
+      @extend %align-center;
+      justify-content: center;
+      width: 51px;
+      height: 31px;
+      border-radius: 3px;
+      background: $red;
+
+      button {
+        @extend %font-size;
+        background: $red;
+        border: none;
+        color: $light;
       }
     }
+
+    a {
+      @extend %font-text;
+      @extend %align-center;
+      @extend %font-size;
+      text-decoration: none;
+      color: $nav-color-text;
+      justify-content: center;
+    }
+  }
+
+  &-user-avt {
+    width: 26.67px;
+    height: 26.67px;
+    top: 48px;
+    left: 1382px;
+    position: absolute;
   }
 }
