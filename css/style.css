@@ -322,6 +322,15 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
     width: 15px;
     font-size: 15px;
   }
+  .blogs-pages-item a a {
+    height: 28px;
+    width: 28px;
+  }
+  .blogs-pages-item a a:hover {
+    color: #FFFFFF;
+    border-radius: 50%;
+    background: #C40000;
+  }
 }
 .blogs .row {
   margin: 0px 6%;
@@ -334,6 +343,9 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
 }
 .blogs .card-body {
   font-family: SVN-Gilroy;
+}
+.blogs .card-body .read-more {
+  position: absolute;
 }
 .blogs .card-body button {
   color: #C40000;
@@ -357,7 +369,6 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   stroke: #FFFFFF;
 }
 .blogs .card-body button svg {
-  position: absolute;
   left: 32%;
   margin-top: 4px;
 }
