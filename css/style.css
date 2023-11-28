@@ -13,7 +13,7 @@ header .image-banner {
   }
 }
 
-footer, .blogs .card-body button, .blogs .card-body .author-time, .blogs-pages-item a, .blogs-pages-item-next, .blogs-pages-item-prev i, .blogs-pages-item, .blogs-pages, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-menu, .navbar-logo-input button, .navbar-logo-input svg, .navbar-logo-input, .navbar-logo {
+footer, .blogs .card-body .author-time, .blogs-pages-item a, .blogs-pages-item-next, .blogs-pages-item-prev i, .blogs-pages-item, .blogs-pages, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-menu, .navbar-logo-input button, .navbar-logo-input svg, .navbar-logo-input, .navbar-logo {
   display: flex;
   align-items: center;
 }
@@ -361,20 +361,23 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   }
 }
 .blogs .card {
-  border-radius: 0px 0px 8px 8px;
   margin-bottom: 50px;
   margin-top: 20px;
+  border: none;
 }
 .blogs .card-body {
   font-family: SVN-Gilroy;
+  border: 1px solid #CCCCCC;
+  border-radius: 0px 0px 8px 8px;
 }
 .blogs .card-body button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #FFFFFF;
   color: #C40000;
   font-size: 14px;
   width: 137px;
-  padding-left: 12px;
-  padding-bottom: 2px;
   height: 40px;
   border: solid 1px #DEDEDE;
   border-radius: 4px;
@@ -389,10 +392,6 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
 }
 .blogs .card-body button:hover svg path {
   stroke: #FFFFFF;
-}
-.blogs .card-body button svg {
-  left: 30%;
-  margin-top: 4px;
 }
 .blogs .card-body h6 {
   font-weight: 700;

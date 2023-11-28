@@ -164,26 +164,28 @@
   }
 
   .card {
-    border-radius: 0px 0px 8px 8px;
     margin-bottom: 50px;    
     margin-top: 20px;
+    border: none;
   }
 
   .card-body {
     font-family: SVN-Gilroy;
+    border: 1px solid #CCCCCC;
+    border-radius: 0px 0px 8px 8px;
 
     .author-time {
       @extend %align-center;
     }
 
     button {
-      @extend %align-center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: $light;
       color: $read-color;
       font-size: 14px;
       width: 137px;
-      padding-left: 12px;
-      padding-bottom: 2px;
       height: 40px;
       border: solid 1px $boder-category;
       border-radius: 4px;
@@ -199,10 +201,6 @@
             stroke: $light;
           }
         }
-      }
-      svg {
-        left: 30%;
-        margin-top: 4px;
       }
 
     }
