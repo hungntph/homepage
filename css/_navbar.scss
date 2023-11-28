@@ -20,7 +20,9 @@
   height: 122px;
   justify-content: space-between;
   z-index: 10;
-  position: absolute;
+  display: block;
+  top: 0;
+  width: 100%;
   @include mobie {
     height: 69px;
     background: $light;

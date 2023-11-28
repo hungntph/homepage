@@ -1,5 +1,6 @@
 header {
   position: relative;
+  width: 100%;
 }
 header .image-banner {
   position: absolute;
@@ -32,7 +33,9 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   height: 122px;
   justify-content: space-between;
   z-index: 10;
-  position: absolute;
+  display: block;
+  top: 0;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .navbar {
@@ -200,11 +203,11 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
 }
 
 .blogs {
-  padding-top: 392px;
+  padding-top: 532px;
 }
 @media screen and (max-width: 768px) {
   .blogs {
-    padding-top: 292px;
+    padding-top: 342px;
   }
 }
 .blogs-title {
@@ -295,9 +298,9 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
 }
 @media screen and (max-width: 768px) {
   .blogs-pages-item-prev i {
-    height: 30px;
-    width: 30px;
-    font-size: 15px;
+    height: 25px;
+    width: 25px;
+    font-size: 10px;
   }
 }
 .blogs-pages-item-next {
@@ -313,9 +316,9 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
 }
 @media screen and (max-width: 768px) {
   .blogs-pages-item-next {
-    height: 30px;
-    width: 30px;
-    font-size: 15px;
+    height: 25px;
+    width: 25px;
+    font-size: 10px;
   }
 }
 .blogs-pages-item a {
@@ -337,8 +340,10 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
 }
 @media screen and (max-width: 768px) {
   .blogs-pages-item a {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
+    margin: 5px;
+    font-size: 15px;
   }
   .blogs-pages-item a:hover {
     color: #FFFFFF;
@@ -356,7 +361,7 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   }
 }
 .blogs .card {
-  border-radius: 8px;
+  border-radius: 0px 0px 8px 8px;
   margin-bottom: 50px;
   margin-top: 20px;
 }
@@ -369,7 +374,7 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   font-size: 14px;
   width: 137px;
   padding-left: 12px;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
   height: 40px;
   border: solid 1px #DEDEDE;
   border-radius: 4px;
@@ -386,8 +391,8 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   stroke: #FFFFFF;
 }
 .blogs .card-body button svg {
-  left: 32%;
-  margin-top: 4px;
+  left: 30%;
+  margin-top: 3px;
 }
 .blogs .card-body h6 {
   font-weight: 700;
@@ -410,6 +415,12 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .blogs .card-body h7 {
+    font-size: 15px;
+    padding-right: 15px;
+  }
 }
 
 footer {
