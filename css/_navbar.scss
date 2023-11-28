@@ -51,6 +51,8 @@
         border: none;
         background: $light;
         list-style: none;
+        border: 1px #D4D4D4;
+        border-radius: 4px;
 
         &::placeholder {
           color: $placeholder;
@@ -186,6 +188,7 @@
         background: $red;
         border: none;
         color: $light;
+        padding-bottom: 3px
       }
     }
 
