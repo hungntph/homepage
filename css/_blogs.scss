@@ -22,13 +22,17 @@
       border-radius: 4px;
       border: 1px solid $boder-category;
       outline: none;
-      padding: 7px 60px 5px 15px;
+      padding: 7px 60px 7px 15px;
+      margin-top: 15px;
       appearance: none;
       -webkit-appearance: none;
       -moz-appearance: none;
       background-image: url("../images/select.png");
       background-repeat: no-repeat;
       background-position: 113px center;
+      @include mobie {
+        margin-top: 0;
+      }
     }
 
     &-name {
