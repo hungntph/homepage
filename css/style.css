@@ -232,6 +232,11 @@ footer p, .blogs-title, .navbar-menu a, .navbar-menu-btn, .navbar-logo span, .na
   background-repeat: no-repeat;
   background-position: 113px center;
 }
+@media screen and (max-width: 768px) {
+  .blogs-title select {
+    margin-top: 0;
+  }
+}
 .blogs-title-name {
   justify-content: center;
   text-decoration: none;

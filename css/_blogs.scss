@@ -30,6 +30,9 @@
       background-image: url("../images/select.png");
       background-repeat: no-repeat;
       background-position: 113px center;
+      @include mobie {
+        margin-top: 0;
+      }
     }
 
     &-name {
